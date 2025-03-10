@@ -1,0 +1,58 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  overflow: hidden;
+  color: #d0cde1;
+}
+
+.right-panel {
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 220px;
+  background: linear-gradient(135deg, #3a1c71, #2e1442);
+  padding: 20px;
+  text-align: center;
+  box-shadow: -5px 0 15px rgba(50, 25, 90, 0.7);
+  border-left: 3px solid #c9c3db;
+}
+
+.right-panel h2 {
+  color: #f0eef5;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.action-btn {
+  display: block;
+  height: 115px;
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  font-size: 1rem;
+  background: #5a3e8c;
+  color: #e0dbf5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px rgba(90, 62, 140, 0.5);
+}
+
+.action-btn:hover {
+  background: #55029a;
+  box-shadow: 0 0 15px rgba(90, 62, 140, 0.7);
+  transform: scale(1.01);
+}
+
+@media (max-width: 768px) {
+  .right-panel {
+      width: 200px;
+  }
+}
