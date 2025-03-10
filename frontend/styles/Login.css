@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #8A2BE2;
+    --secondary-color: #32CD32;
+    --background-color: #1C1C1C;
+    --input-background-color: #2F2F2F;
+    --border-color: #4B0082;
+    --hover-color: #9932CC;
+    --error-color: #FF4500;
+    --text-color: #E0E0E0;
+    --placeholder-color: #A9A9A9;
+    --button-hover-color: #7FFF00;
+}
+
+.login {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.auth-container {
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--primary-color);
+    width: 100%;
+    max-width: fit-content;
+    text-align: center;
+}
+
+.auth-card {
+    background-color: var(--input-background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--border-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--input-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.start-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: var(--button-hover-color);
+}
+
+.error-box {
+    background-color: var(--error-color);
+    color: var(--text-color);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+@media (max-width: 450px) {
+    .auth-container {
+        padding: 15px;
+    }
+    .auth-card {
+        padding: 15px;
+    }
+    input[type="text"],
+    input[type="password"],
+    .login-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
