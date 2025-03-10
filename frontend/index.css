@@ -1,0 +1,299 @@
+body{
+  margin: 0;
+  background-color: #EAF2F8;
+}
+
+.game-container {
+  transform: translateX(100px) translateY(-60px);
+  text-align: center;
+  background-color: #EAF2F8;
+  color: black;
+  height: 700px;
+  width:500px;
+  padding: 20px;
+}
+
+.country-details {
+  position: absolute;
+  bottom:-10px;
+  left:50%;
+  z-index: 999;
+  width: fit-content;
+  height: fit-content;
+  transform: translateX(-50%);
+  background-color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.country-info h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.country-boxes{
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.c-box{
+  height: 100px;
+  background-color: #000;
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2px;
+}
+
+.c-box-head{
+  margin-bottom: 2px;
+}
+
+.country-buttons{
+  height: 33px;
+  width: 160px;
+  padding: 5px;
+  border: 2px solid white;
+  background-color: #5526a6;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.world-map-button {
+  position: absolute;
+  top: 100px;
+  left: -50px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color:  rgb(56, 0, 123);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 888;
+}
+.country-map-button {
+  position: absolute;
+  bottom: 0px;
+  left: -50px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color:  rgb(56, 0, 123);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 888;
+}
+.leaderBoard-button {
+  position: absolute;
+  top: 100px;
+  right: -560px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: rgb(56, 0, 123);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 888;
+}
+
+.take-actions {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1a0043aa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(59, 10, 173, 0.3);
+  color: #f8f8f2;
+  width: 300px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.country-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.country-action-opts {
+  background: #693dd8;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #f8f8f2;
+  transition: background 0.3s ease-in-out;
+}
+
+.country-action-opts:hover {
+  background: #240056;
+}
+
+.close-opts {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #310085;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  color: #f8f8f2;
+}
+
+
+
+.close-opts:hover {
+  background: #170037;
+}
+
+:root {
+  --primary-color: #8A2BE2;
+  --secondary-color: #32CD32;
+  --background-color: #1C1C1C;
+  --input-background-color: #2F2F2F;
+  --border-color: #4B0082;
+  --hover-color: #9932CC;
+  --error-color: #FF4500;
+  --text-color: #E0E0E0;
+  --placeholder-color: #A9A9A9;
+  --button-hover-color: #7FFF00;
+}
+
+.country-select {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.country-selection {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px var(--primary-color);
+  width: 900px;
+  text-align: center;
+}
+
+.country-selection h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.country-selection input[type="text"],
+.country-selection input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--input-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.country-selection input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.country-selection .dropdown {
+  width: 92%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: var(--input-background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23A9A9A9" viewBox="0 0 16 16"><path d="M4.646 6.646a.5.5 0 0 1 .708 0L8 9.293l2.646-2.647a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 0-.708z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.country-selection .start-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--text-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.country-selection .start-button:hover {
+  background-color: var(--button-hover-color);
+}
+.country-selection .have-account-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--button-hover-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.country-selection .have-account-button:hover {
+ color: greenyellow;
+}
+
+@media (max-width: 450px) {
+  .country-selection {
+      padding: 15px;
+  }
+  .country-selection input[type="text"],
+  .country-selection input[type="password"],
+  .country-selection .dropdown,
+  .country-selection .start-button {
+      font-size: 14px;
+      padding: 8px;
+  }
+}
