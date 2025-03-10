@@ -1,0 +1,235 @@
+.action-main-container {
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 1000px;
+    background-color: rgba(100, 0, 201, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+    padding: 20px;
+}
+
+.action-head-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.action-cross {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.action-cross:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+.action-defining-divs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.actions-div {
+    background: white;
+    color: black;
+    width: 250px; 
+    aspect-ratio: 1 / 1; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.actions-div:hover {
+    transform: scale(1.01);
+    box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.4);
+}
+
+.upgrades-container {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+.upgrade-details{
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.up-name{
+    color: white;
+    font-weight: 900;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.up-close{
+    border:none;
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+    cursor:pointer;
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+}
+.up-close:hover{
+    color:#180050;
+    transform: scale(1.1);
+}
+.upgrade-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.95);
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 95%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.upgrade-btn {
+    background: #00ff00;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+
+.upgrade-btn:hover {
+    background: #3700b3;
+    transform: scale(1.05);
+}
+
+.progress-bar {
+    width: 85%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #5500ff;
+    width: 0%;
+    transition: width 0.4s ease-in-out;
+}
+
+.progress-and-button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purchase-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.purchase-controls input {
+    width: 100%;
+    padding: 6px;
+    border: 2px solid #ffffff;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    outline: none;
+    transition: border 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.purchase-controls input:focus {
+    border-color: #00ff00;
+    background: white;
+}
+
+
+.buy-btn {
+    background: #00ff00;
+    color: black;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+.buy-btn:hover {
+    background: #3700b3;
+    color: white;
+    transform: scale(1.05);
+}
+
+.territories {
+    text-align: center;
+  }
+  
+  .territory-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .territory-card {
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    text-align: left;
+  }
+  
+  .territory-card h3 {
+    margin-top: 0;
+  }
+  
+  .territory-card p {
+    margin: 5px 0;
+  }
