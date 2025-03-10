@@ -1,0 +1,126 @@
+.leaderboard{
+    transform:translateX(50px) translateY(-680px);
+
+    z-index: 999;
+    height: 700px;
+    width: 1000px;
+    background-color: hsl(0, 0%, 100%);
+    border:2px solid black;
+    border-radius: 10px;
+}
+.lead-head{
+
+
+    padding: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: #f3ecd5;
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.lead-heading{
+  
+    width: 900px;
+    text-align: center;
+}
+.lead-cross{
+   color: rgb(255, 0, 30);
+   cursor: pointer;
+    width: 100px;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+.lead-nav{
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    align-items: center;
+}
+.lead-rank-buttons{
+    width: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color: rgb(56, 0, 123);
+    border: 1px solid rgb(255, 255, 255);
+    height: 40px;
+    cursor: pointer;
+}
+.lead-rank-buttons.active {
+    background-color: rgb(143, 79, 255);
+    color: black;
+    transform: scale(1.05);
+  }
+
+.rank-holder {
+    width: 100%;
+    max-height: 550px; 
+    overflow-y: auto; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.rank-of-countries {
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+.ranked-cont-rows {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out;
+}
+
+
+.ranked-cont-rows:hover {
+    background-color: #f9f9f9;
+}
+
+
+.ranked-data {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.ranked-data:first-child {
+    font-weight: bold;
+    color: #007bff;
+}
+
+
+.ranked-cont-rows:nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+.ranked-cont-rows:nth-child(even) {
+    background-color: #ffffff;
+}
+
+
+.rank-holder::-webkit-scrollbar {
+    width: 8px;
+}
+
+.rank-holder::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.rank-holder::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+  
