@@ -59,12 +59,6 @@ World Conqueror is a browser-based idle game where players take control of a cou
 
 ---
 
-## 📁 GitHub Repository
-
-📌 _Code will be updated soon._
-
----
-
 ## 🙏 Acknowledgements
 
 - React Docs
